@@ -1,34 +1,81 @@
 <!DOCTYPE html>
 
-<style>
-    #searchBar
-    {
-        border-radius: 10px;
-    }
-
-    #apps
-    {
-        width: 30px;
-    }
-
-</style>
-
-<head>
-    <title>Google</title>
-</head>
-
-<body>
-
-    <nav>
-        <a href = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a>
-        <a href = "https://www.google.si/imghp?hl=en&tab=ri&ogbl">Images</a>
-        <a href = "#"> <img id = apps src = "images/outline_apps_black_24dp.png" alt = "Google Apps icon"> </a>
-    </nav>
-
-    <header>
-        <img src = "images/googlelogo_color_272x92dp.png" alt = "Google logo">
-    </header>
 
 
-    <input type = "text" id = "searchBar" placeholder = "Search Google or type a URL">
-</body>
+<html lang="en">
+    
+    <head>
+        <title>Google</title>
+
+        <style>
+
+            #logoAndSearch
+            {
+                --logo-width: 300px;
+                
+                position: relative;
+                top: 30%;
+                
+                width: var(--logo-width);
+                margin: 0 auto;
+            }
+
+            #searchBar
+            {
+                border-radius: 10px;
+                width: var(--logo-width);
+            }
+
+            #apps
+            {
+                width: 30px;
+            }
+        
+            nav
+            {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+        
+            
+
+            
+            .make-center
+            {
+                margin: 0 auto;
+            }
+        
+            html, body 
+            {
+                margin: 0;
+                height: 100%;
+            }
+        
+            #googleLogo
+            {
+                width: var(--logo-width);
+            }
+        
+        </style>
+    </head>
+    
+    <body>
+    
+        <nav>
+            <a href = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a>
+            <a href = "https://www.google.si/imghp?hl=en&tab=ri&ogbl">Images</a>
+            <a href = "#"> <img id = apps src = "images/outline_apps_black_24dp.png" alt = "Google Apps icon"> </a>
+        </nav>
+    
+    
+        <div id = "logoAndSearch">
+            <header>
+                <img id = "googleLogo" src = "images/googlelogo_color_272x92dp.png" alt = "Google logo">
+            </header>
+        
+        
+            <input type = "text" id = "searchBar" placeholder = "Search Google or type a URL">
+        </div>
+    </body>
+</html>
